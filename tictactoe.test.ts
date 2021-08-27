@@ -32,6 +32,11 @@ test('I can start a game', async () => {
     let lowerLeft = await (await driver).findElement(By.id('cell-6'));
     await lowerLeft.click();
     await driver.sleep(3000)
+
+    // test('Clicking the middle square adds an X')
+    let middleSquare = await (await driver).findElement(By.id('cell-4'));
+    await middleSquare.click();
+    await driver.sleep(3000)
 });
 
 
